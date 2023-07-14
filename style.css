@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    min-width: 200px;
+    max-width: 20%;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*timer*/
+
+
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+
+
+
+/* Start Game Buttons*/
+
+.startgame {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.startgame button {
+    cursor: pointer;
+    padding: 17px 130px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(56, 215, 255);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
+    box-shadow: rgb(47, 173, 204) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+}
+
+.startgame button:hover {
+    box-shadow: rgb(47, 173, 204) 0px 7px 0px 0px;
+}
+
+
+
+.startgame button:active {
+    background-color: rgb(56, 215, 255);
+    /*50, 168, 80*/
+    box-shadow: rgb(47, 173, 204) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+
+
+
+/* Win Lose Buttons*/
+
+
+.winlose {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.winlose button {
+    cursor: pointer;
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(255, 56, 86);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
+    box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.winlose button:hover {
+    box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+}
+
+
+.winlose button:active {
+    background-color: rgb(255, 56, 86);
+    /*50, 168, 80*/
+    box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+   }
+
+
+#green {
+    background-color:  rgb(19, 211, 2);
+    box-shadow: rgb(16, 197, 0) 0px 10px 0px 0px;
+}
+
+#green:hover {
+    box-shadow: rgb(16, 197, 0) 0px 7px 0px 0px;  
+}
+
+#green:active {
+    background-color: rgb(19, 211, 2);
+    /*50, 168, 80*/
+    box-shadow: rgb(16, 197, 0) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+
+
+
+
+/*Points*/
+
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#punkte {
+    font-size: 40px;
+    text-decoration: underline 2px;
+}
+
+#player-punkte {
+    font-size: 25px;
+}
+
+#bot-punkte {
+    font-size: 25px;
+}
+

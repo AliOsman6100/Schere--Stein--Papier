@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Schere, Stein, Papier</title>
+</head>
+    <body>
+        
+        <div class="container">
+            
+            <div class="timer">
+                <h1 id="timer-el"></h1>
+            </div>
+
+            <div class="images">
+                <img id="image_shower"/>
+            </div>
+
+            <div class="buttons">
+                <div class="startgame">
+                    <button onclick="get_random_image()">Starten!</button>
+                </div>
+
+                <div class="winlose">
+                    <button id="green" onclick="winAndTimerOne()">Gewonnen</button>
+                    <button id="red" onclick="loseAndTimerTwo()">Verloren</button>
+                </div>
+            </div>
+
+            <div class="leaderboard">
+                <ul id="punkte">Punkte</ul>
+                <ul id="bot-punkte">Bot:</ul>
+                <ul id="player-punkte">Du:</ul>
+            </div>
+
+        </div>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
